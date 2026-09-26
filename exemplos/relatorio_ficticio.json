@@ -1,0 +1,9 @@
+{
+  "fontes": [
+    {"id": "F1", "url": "https://example.com/ficticio", "titulo": "Comunicado fictício", "emissor": "Empresa Exemplo", "data_publicacao": "2026-01-01"}
+  ],
+  "alegacoes": [
+    {"texto": "A Empresa Exemplo publicou um comunicado fictício.", "veredito": "confirmada", "fontes": ["F1"]},
+    {"texto": "O comunicado criou uma obrigação legal.", "veredito": "sem_evidencia", "fontes": []}
+  ]
+}
