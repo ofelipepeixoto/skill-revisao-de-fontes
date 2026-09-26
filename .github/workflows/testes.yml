@@ -1,0 +1,11 @@
+name: Validar skill e relatório
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: python3 -m unittest -v scripts/test_validar_relatorio.py
+      - run: python3 scripts/validar_relatorio.py exemplos/relatorio_ficticio.json
